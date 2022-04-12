@@ -1,0 +1,135 @@
+/* main styles */
+::root {
+  --main-color: #e74c6e;
+}
+
+.text-main {
+  color: #e74c6e;
+}
+
+.bg-main {
+  background-color: #e74c6e;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+}
+
+.linear-gre {
+  background-image: -webkit-gradient(linear, right top, left top, from(#fe4f70), color-stop(51%, #ffa387), to(#fe4f70));
+  background-image: linear-gradient(to left, #fe4f70 0%, #ffa387 51%, #fe4f70 100%);
+  background-size: 200% auto;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.linear-gre:hover {
+  background-position: right center;
+}
+
+.category {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 4px;
+  font-size: 12px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#fe4f70), color-stop(51%, #ffa387), to(#fe4f70));
+  background-image: linear-gradient(to left, #fe4f70 0%, #ffa387 51%, #fe4f70 100%);
+  background-size: 200% auto;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 5;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+.category:hover {
+  background-position: right center;
+}
+
+/* main styles */
+nav {
+  height: 75px;
+  background-image: url("./../images/header-bg.png");
+  background-size: cover;
+}
+
+nav .navbar-brand img {
+  width: 180px;
+  height: 64px;
+}
+
+nav .nav-link,
+nav .nav-link.active {
+  color: #203656;
+  font-size: 15px;
+}
+
+nav .nav-item:hover .nav-link {
+  color: #e74c6e;
+}
+
+.landing {
+  background-color: #f7f8f9;
+}
+
+.landing .card-img-overlay {
+  top: auto;
+}
+
+.landing .scale {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.landing .scale .card-text {
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.landing .scale .card-img {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.landing .scale:hover .card-text {
+  color: #e74c6e;
+}
+
+.landing .scale:hover .card-img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.landing .scale:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: #203656;
+  opacity: 0.2;
+}
+
+.landing .card-body .card-text {
+  font-size: 13px;
+  padding-top: 2px;
+}
+
+.landing .scaling:hover img::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: #203656;
+  opacity: 0.2;
+}
+/*# sourceMappingURL=app.css.map */

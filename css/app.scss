@@ -1,0 +1,121 @@
+/* main styles */
+::root {
+  --main-color: #e74c6e;
+}
+.text-main {
+  color: #e74c6e;
+}
+.bg-main {
+  background-color: #e74c6e;
+}
+body {
+  font-family: "Tajawal", sans-serif;
+}
+.linear-gre {
+  background-image: linear-gradient(
+    to left,
+    #fe4f70 0%,
+    #ffa387 51%,
+    #fe4f70 100%
+  );
+  background-size: 200% auto;
+  transition: 0.3s;
+  &:hover {
+    background-position: right center;
+  }
+}
+.category {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: fit-content;
+  padding: 4px;
+  font-size: 12px;
+  background-image: linear-gradient(
+    to left,
+    #fe4f70 0%,
+    #ffa387 51%,
+    #fe4f70 100%
+  );
+  background-size: 200% auto;
+  transition: 0.3s;
+  z-index: 5;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    background-position: right center;
+  }
+}
+/* main styles */
+nav {
+  height: 75px;
+  background-image: url("./../images/header-bg.png");
+  background-size: cover;
+  .navbar-brand {
+    img {
+      width: 180px;
+      height: 64px;
+    }
+  }
+  .nav-link,
+  .nav-link.active {
+    color: #203656;
+    font-size: 15px;
+  }
+
+  .nav-item:hover .nav-link {
+    color: #e74c6e;
+  }
+}
+.landing {
+  background-color: #f7f8f9;
+  .card-img-overlay {
+    top: auto;
+  }
+  .scale {
+    cursor: pointer;
+    overflow: hidden;
+    .card-text {
+      transition: all 0.7s;
+    }
+    .card-img {
+      transition: all 0.5s;
+    }
+    &:hover .card-text {
+      color: #e74c6e;
+    }
+    &:hover .card-img {
+      transform: scale(1.1);
+    }
+    &:hover::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+      background-color: #203656;
+      opacity: 0.2;
+    }
+  }
+  .card-body {
+    .card-text {
+      font-size: 13px;
+      padding-top: 2px;
+    }
+  }
+  .scaling {
+    &:hover img::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+      background-color: #203656;
+      opacity: 0.2;
+    }
+  }
+}
