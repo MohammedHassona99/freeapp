@@ -52,6 +52,7 @@ body {
 }
 
 /* main styles */
+/* Start nav */
 nav {
   height: 75px;
   background-image: url("./../images/header-bg.png");
@@ -73,6 +74,8 @@ nav .nav-item:hover .nav-link {
   color: #e74c6e;
 }
 
+/* End Nav */
+/* Start Landing */
 .landing {
   background-color: #f7f8f9;
 }
@@ -117,19 +120,62 @@ nav .nav-item:hover .nav-link {
   opacity: 0.2;
 }
 
-.landing .card-body .card-text {
-  font-size: 13px;
-  padding-top: 2px;
+.landing article .image {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  overflow: hidden;
 }
 
-.landing .scaling:hover img::before {
+.landing article .image img {
+  height: 185px;
+}
+
+.landing article:hover .image::before {
+  content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
-  z-index: 5;
+  opacity: 0.3;
   background-color: #203656;
-  opacity: 0.2;
+  z-index: 5;
 }
+
+.landing article:hover .image {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.landing article:hover .content {
+  color: #e74c6e;
+}
+
+/* End Landing */
+/* Start Articles */
+.articles {
+  background-color: #f7f8f9;
+}
+
+.articles .card {
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.articles .card .card-img-top {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.articles .card:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.articles .card .card-text:hover {
+  color: #e74c6e;
+}
+
+/* End Articles */
 /*# sourceMappingURL=app.css.map */
