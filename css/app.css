@@ -178,4 +178,15 @@ nav .nav-item:hover .nav-link {
 }
 
 /* End Articles */
+/* Start Footer */
+footer {
+  background-color: #0a1b34;
+}
+
+footer .copyright {
+  border-top: 1px solid #777;
+  text-align: center;
+}
+
+/* End Footer */
 /*# sourceMappingURL=app.css.map */
